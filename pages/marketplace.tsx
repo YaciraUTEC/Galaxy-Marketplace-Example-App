@@ -28,6 +28,7 @@ export default function Marketplace() {
 {/* Step 1 code block */}
 
   const LDClient = useLDClient();
+  /* Step cambio clave */
   const { storeAttentionCallout, featNewMenu} = useFlags();
 
   console.log("[LD] featNewMenu:", featNewMenu);
@@ -312,7 +313,7 @@ export default function Marketplace() {
                       placeholder="Browse a Galaxy of Storefronts"
                     />
                   </div>
-                  
+
                   {featNewMenu && (
                     <div className="mt-4 sm:mt-6 gap-x-2 gap-y-4 sm:gap-y-0 grid grid-cols-3 sm:flex sm:grid-cols-0  ">
                       <Badge className="text-lg border-2 bg-transparent border-gray-500 text-ldlightgray">
@@ -337,7 +338,7 @@ export default function Marketplace() {
                   )}
                 </div>
               </header>
-     
+
 
               <div className="mx-8 sm:mx-12 xl:mx-auto pt-14 ">
                 <div className="space-y-16">
